@@ -1,0 +1,58 @@
+.about {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: var(--black);
+    color: var(--yellow);
+    padding: 40px 40px 60px 40px;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .head {
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .link {
+            margin-bottom: 20px;
+        }
+    }
+    
+    /* Title */
+    h2 {
+        font-size: 5rem;
+        max-width: 60%;
+    }
+    .about-title {
+        transform: translateX(-140px);
+        opacity: 0;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+        line-height: 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 100;
+        line-height: 1.1;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .row {
+        margin: 0 0 40px 0;
+    }
+
+    .foot {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}

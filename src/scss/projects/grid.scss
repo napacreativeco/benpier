@@ -1,0 +1,42 @@
+.grid-item {
+    width: 300px;
+    height: 200px;
+}
+
+/* ---- grid ---- */
+
+  
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* ---- .element-item ---- */
+  
+  .grid-item {
+    position: relative;
+    float: left;
+    width: 23%;
+    margin: 5%;
+    padding: 10px;
+    background: red;
+    color: white;
+    font-size: 50px;
+  }
+  
+  .grid-item--width2 { width: 210px; }
+  .grid-item--height2 { height: 210px; }
+  
+  .grid-item:nth-child(10n+0) { background: hsl(   0, 100%, 50%); }
+  .grid-item:nth-child(10n+1) { background: hsl(  36, 100%, 50%); }
+  .grid-item:nth-child(10n+2) { background: hsl(  72, 100%, 50%); }
+  .grid-item:nth-child(10n+3) { background: hsl( 108, 100%, 50%); }
+  .grid-item:nth-child(10n+4) { background: hsl( 144, 100%, 50%); }
+  .grid-item:nth-child(10n+5) { background: hsl( 180, 100%, 50%); }
+  .grid-item:nth-child(10n+6) { background: hsl( 216, 100%, 50%); }
+  .grid-item:nth-child(10n+7) { background: hsl( 252, 100%, 50%); }
+  .grid-item:nth-child(10n+8) { background: hsl( 288, 100%, 50%); }
+  .grid-item:nth-child(10n+9) { background: hsl( 324, 100%, 50%); }
+  

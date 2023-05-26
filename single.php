@@ -1,0 +1,17 @@
+<?php
+/* Single Page */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+
+get_header(); ?>
+
+<?php while ( have_posts() ) : ?>
+	<?php the_post(); ?>
+
+    <?php the_content();  ?>
+<?php endwhile; ?>
+
+<?php
+get_footer();

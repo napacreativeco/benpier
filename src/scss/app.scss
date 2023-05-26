@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'haetten';
+    src: url('../fonts/haettenschweiler-regular-webfont.woff2') format('woff2'),
+         url('../fonts/haettenschweiler-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --haetten: 'haetten';
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    --red: #EE6055;
+    --orange: #FFA686;
+    --peach: #FFA686;
+    --yellow: #FCEF33;
+    --white: #F5F5F5;
+    --white-tint: #ecebeb; 
+    --blue: #477998;
+    --black: #191919;
+    --dark-grey: #3C3C3C;
+}
+
+html {
+    background-color: var(--white);
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#wpadminbar {
+    z-index: 7 !important;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+===============================================
+Scrollbar
+===============================================
+*/
+body::-webkit-scrollbar {
+    width: 0.8em;
+    background: var(--black);
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    position: absolute;
+    //box-shadow: inset 0 0 6px var(--red);
+  }
+
+body::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 10px;
+    outline: 0px;
+}
+
+
+
+/*
+===============================================
+Typography
+===============================================
+*/
+h1, h2, h3, h4, h5 {
+    font-family: 'haetten';
+    font-weight: normal !important;
+}
+
+#wp-admin {
+    h1, h2, h3, h4, h5 {
+        font-family: 'Arial';
+        font-weight: normal !important;
+    }
+}
+
+h2 {
+    letter-spacing: 1px;
+}
+
+a {
+    color: inherit;
+}
+
+.haetten {
+    font-family: 'haetten';
+}
+
+
+
+/*
+===============================================
+Back to Top
+===============================================
+*/
+.up-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: -80px;
+    
+    transform: rotate(360deg), translateX(140%);
+
+    .arrow-wrapper {
+        background: var(--yellow);
+        border-radius: 50%;
+        height: 45px;
+        width: 45px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        img {
+            width: 60%;
+        }
+    }
+}
+
+
+@import './loader.scss';
+@import './navbar.scss';
+@import './menu.scss';
+@import './home/hero.scss';
+@import './home/about.scss';
+// @import './projects/grid.scss';
+
+@import './taxonomies/taxonomies.scss';
+
+@import './shop/archive.scss';
+@import './shop/single-product.scss';
