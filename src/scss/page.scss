@@ -1,0 +1,27 @@
+main.page {
+    .header {
+        padding: 120px 5% 40px 5%;
+
+        h1 {
+            font-size: 8vw;
+            margin: 0;
+        }
+    }
+
+    .content {
+        padding: 0 5%;
+    }
+
+    .breadcrumbs {
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    main.page {
+        .header {
+            padding: 60px 5% 40px 5%;
+        }
+    }
+}

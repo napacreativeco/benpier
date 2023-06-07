@@ -31,7 +31,7 @@ add_action( 'init', 'throne_theme_setup' );
 /*======================================================
  * Disable WooCommerce Styles
  *======================================================*/
-//add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
 
 /*======================================================

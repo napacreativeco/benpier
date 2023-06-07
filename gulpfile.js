@@ -31,7 +31,7 @@ exports.buildStyles = buildStyles;
   =========================
   */
 function buildScripts() {
-    return gulp.src(['./src/js/index.js', './src/js/taxonomy.js'])
+    return gulp.src(['./src/js/*.js'])
       .pipe(concat('app.js'))
       .pipe(minify())
       .pipe(gulp.dest('./compiled/'));

@@ -11,21 +11,12 @@ $term = get_queried_object();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <?php 
-    if ( is_front_page() ) { 
-    ?>
-        <title>Ben Pier</title>
-    <?php
-    } else {
-    ?>
-        <title><?php echo $term->description ?> | Ben Pier</title>
-    <?php
-    } ?>
+    <title>Ben Pier</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   </head>
 
   <body data-scroll-container>
@@ -46,6 +37,17 @@ $term = get_queried_object();
                     Menu
                 </div>
             </div>
+
+            <?php 
+            if ( is_shop() ) : ?>
+                <?php echo WC()->cart->get_cart_contents_count() ?>
+            <?php
+            else :
+            ?>
+
+            <?php
+            endif;
+            ?>
         </div>
     </div>
 

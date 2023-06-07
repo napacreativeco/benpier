@@ -159,32 +159,6 @@
         console.log();
     });
 
-    /*
-    =========================================================
-    Menu Image Hover
-    =========================================================
-    */
-    var timerx;
-    $(".cell").mouseenter(function(e) {
-        var that = this;
-        timerx = setTimeout(function(){
-
-            var targ = $(that).attr('data-background');
-
-            $('.menu').css({
-                background: 'url("'+ targ +'") no-repeat',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center center',
-            });    
-
-        }, 100);
-
-    }).mouseleave(function(e) {
-
-        clearTimeout(timerx);
-
-    });
-
 
     /*
     =========================================================

@@ -74,7 +74,9 @@ body::-webkit-scrollbar-thumb {
     outline: 0px;
 }
 
-
+input:focus-visible {
+    outline: 0px;
+}
 
 /*
 ===============================================
@@ -142,6 +144,7 @@ Back to Top
 @import './loader.scss';
 @import './navbar.scss';
 @import './menu.scss';
+@import './page.scss';
 @import './home/hero.scss';
 @import './home/about.scss';
 // @import './projects/grid.scss';
@@ -149,4 +152,6 @@ Back to Top
 @import './taxonomies/taxonomies.scss';
 
 @import './shop/archive.scss';
-@import './shop/single-product.scss';
+@import './shop/single.scss';
+@import './shop/related.scss';
+@import './shop/cart.scss';

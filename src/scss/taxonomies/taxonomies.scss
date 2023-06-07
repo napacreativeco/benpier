@@ -188,3 +188,21 @@
 }
 
 @import 'info-overlay.scss';
+
+
+@media screen and (max-width: 767px) {
+
+    .taxonomy-container .header {
+        margin-bottom: 0px;
+    }
+
+    .taxonomy-container h1 {
+        font-size: 15vw;
+    }
+
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
